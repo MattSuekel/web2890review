@@ -12,6 +12,13 @@ glob.sync('./src/**/*.html').map(file => {
 
 export default defineConfig({
   root: 'src',
+  css: {
+    preprocessorOptions: {
+      scss: {
+        quietDeps: true
+      }
+    }
+  },
   build: {
     outDir: '../dist',
     emptyOutDir: true,
