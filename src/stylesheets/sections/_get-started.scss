@@ -2,13 +2,29 @@
 @use '../components/mixins'as *;
 
 .get-started {
-  padding: 4rem 0;
+  padding: 2.5rem 0;
   background-color: $gray-200;
+
+  @include media-breakpoint-up(md) {
+    padding: 3rem 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 4rem 0;
+  }
 }
 
 .cta-info {
-  padding: 3rem;
+  padding: 1.5rem;
   margin: 1rem 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 2rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 3rem;
+  }
 
   &__list {
     position: relative;
@@ -30,7 +46,15 @@
 
 // FORM CONTENT 
 .form {
-  padding: 3rem;
+  padding: 1.5rem;
+
+  @include media-breakpoint-up(md) {
+    padding: 2rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 3rem;
+  }
 
   button {
     border: none;

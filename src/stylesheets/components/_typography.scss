@@ -10,10 +10,15 @@
   }
 
   &--description {
-    font-size: 1rem;
+    font-size: 0.95rem;
     display: block;
-    margin-top: 1.2rem;
+    margin-top: 0.9rem;
     text-transform: none;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.15rem;
+      margin-top: 1.2rem;
+    }
 
     @include media-breakpoint-up(lg) {
       font-size: 1.4rem;
@@ -25,11 +30,19 @@
 
 .heading-line::before {
   content: "";
-  width: 10rem;
+  width: 6rem;
   height: 0.1rem;
   display: block;
   margin: 0 auto;
   background-color: $primary;
+
+  @include media-breakpoint-up(md) {
+    width: 8rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 10rem;
+  }
 }
 
 .heading-line::after {
@@ -53,6 +66,10 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.5rem;
+    }
 
     @include media-breakpoint-up(lg) {
       font-size: 1.8rem;

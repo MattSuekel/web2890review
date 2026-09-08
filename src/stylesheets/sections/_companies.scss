@@ -3,13 +3,31 @@
 .companies {
   margin-top: -1px;
   background: $white;
-  padding: 0 0 5rem 0;
+  padding: 0 0 3rem 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 0 0 4rem 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 0 5rem 0;
+  }
 
   &__logo-box {
     max-width: 100%;
-    height: 3rem;
-    margin-bottom: 2rem;
+    height: 2.25rem;
+    margin-bottom: 1.25rem;
     padding: 0.5rem;
+
+    @include media-breakpoint-up(md) {
+      height: 2.6rem;
+      margin-bottom: 1.6rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 3rem;
+      margin-bottom: 2rem;
+    }
     text-align: center;
     position: relative;
 

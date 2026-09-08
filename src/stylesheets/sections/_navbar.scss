@@ -4,14 +4,41 @@
 .menu {
   @include gradient;
 
+  .navbar-brand img {
+    height: 2.5rem;
+
+    @include media-breakpoint-up(lg) {
+      height: 3.125rem;
+    }
+  }
+
   li {
-    padding: 0 0.7rem;
+    padding: 0.15rem 0;
+
+    @include media-breakpoint-up(lg) {
+      padding: 0 0.15rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding: 0 0.7rem;
+    }
 
     a {
       color: $white;
-      padding: 0 0.7rem;
+      padding: 0.35rem 0.7rem;
       text-transform: capitalize;
       font-weight: 600;
+      font-size: 0.95rem;
+
+      @include media-breakpoint-up(lg) {
+        padding: 0 0.3rem;
+        font-size: 0.85rem;
+      }
+
+      @include media-breakpoint-up(xl) {
+        padding: 0 0.7rem;
+        font-size: 1rem;
+      }
 
     }
 
