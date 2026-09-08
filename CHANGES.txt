@@ -1,1 +1,22 @@
-TODO: List here all the changes you made to given template to adapt it to your needs
+Matt Suekel - WEB 2890 Review Assignment
+
+changed the color theme
+ $primary   #0d503c t0 #2e1f6b
+ $secondary #20c997 t0 #7c5cff
+ $orange    #fd7e14 to #ffb020
+ $footer    #151414 to #12101f
+
+new skills section uses .progress and .badge
+  Progress bars for htmx, Python, JavaScript and Figma, plus badge pills for other stuff.
+
+new experience section uses .card and .list-group
+  A card containing a list-group timeline Web
+
+adjusted responsiveness
+
+replaced placeholder text
+
+set social links to weber state
+
+replaced every image and illustration
+
